@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "drf-api-auth"
-version = "0.1.0"
+version = "0.1.2"
 description = "Django Restframework API Authentication"
 authors = ["Amin <amin.bsr99@gmail.com>"]
 readme = "README.md"
