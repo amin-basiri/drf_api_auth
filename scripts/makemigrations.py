@@ -33,6 +33,6 @@ if __name__ == "__main__":
     django.setup()
 
     app_labels = [
-        "drf_api_auth",
+        "api_auth",
     ]
     call_command("makemigrations", *app_labels)
