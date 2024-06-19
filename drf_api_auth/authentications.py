@@ -29,7 +29,9 @@ class ApikeyAuthentication(BaseAuthentication):
     """
 
     def authenticate(self, request):
-        api_key = request.META.get("X_API_KEY", "")
+        api_key = request.META.get("X_API_KEY", "") or request.META.get(
+            "HTTP_X_API_KEY", ""
+        )
 
         if not api_key:
             return None
